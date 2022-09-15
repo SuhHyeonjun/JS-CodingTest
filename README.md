@@ -3,6 +3,6 @@
 |제목|설명|링크|
 |------|---|---|
 |**Algorithms**|프로그래머스 간단한 알고리즘 문제|https://school.programmers.co.kr/learn/courses/18|
-|테스트1|테스트2|테스트3|
-|테스트1|테스트2|테스트3|
+|**lv1**|프로그래머스 Lv 1 문제|https://school.programmers.co.kr/learn/challenges?order=recent&page=1&languages=javascript&levels=1|
+|**lv2**|프로그래머스 Lv 2 문제|https://school.programmers.co.kr/learn/challenges?order=recent&levels=2&page=1&languages=javascript|
 
