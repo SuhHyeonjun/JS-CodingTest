@@ -5,7 +5,7 @@
 function solution(arr) {
     let answer= true;    
     let getNewArr = arr.sort();
-      for (let i = 0; i < getNewArr.length; ++i){
+      for (let i = 0; i < getNewArr.length; i++){
           if(getNewArr[i] != i+1)
              return answer = false;
       }
@@ -16,3 +16,20 @@ console.log(solution([4,1,3]));
 console.log(solution([1,2,3]));
 console.log(solution([9,8,7]));
 
+
+
+/* Math.max 메서드 사용 */
+function solution(arr) {
+   let answer = true;
+
+   console.log(arr.length);
+
+      // 입력받은 값중 가장 큰 수를 반환.
+   let max = Math.max(arr);
+   answer = (max === arr.length) ? true : false;
+   return answer;
+}
+
+console.log(solution([4,1,3]));
+console.log(solution([1,2,3]));
+console.log(solution([9,8,7]));
