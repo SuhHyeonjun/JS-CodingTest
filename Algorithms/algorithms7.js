@@ -15,15 +15,19 @@ function solution(sticker) {
         // 스티커가 하나밖에 없을 경우
     if(sticker.length === 1) return sticker[0];
     
-        // 1번째 스티커를 뜯는 경우 마지막 스티커와 인접하므로 len-1 까지 반복한다.
+    /* 1번째 스티커를 뜯는 경우 */ 
+        // 마지막 스티커와 인접하므로 len-1 까지 반복한다.
     for(let i = 2; i < len-1; i++)
+        // DP 배열의 크기가 +2 되었으므로 해당 스티커 역시 sticker[i-2]로 찾아야 한다.
       dp1[i] = Math.max(dp1[i-1], dp1[i-2] + sticker[i-2]);
 
     console.log(dp1)
 
 
-        // 2번재 스티커를 뜯는 경우 마지막 스티커와 인접하지 않으므로 len 까지 반복하며, i는 3부터 시작한다.
+    /* 2번재 스티커를 뜯는 경우 */
+        // 마지막 스티커와 인접하지 않으므로 len 까지 반복하며, i는 3부터 시작한다.
     for(let i = 3; i < len; i++) 
+        // DP 배열의 크기가 +2 되었으므로 해당 스티커 역시 sticker[i-2]로 찾아야 한다.
       dp2[i] = Math.max(dp2[i-1], dp2[i-2] + sticker[i-2]);
 
     console.log(dp2)
