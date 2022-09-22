@@ -8,3 +8,11 @@ function solution(n) {
 }
 
 console.log(solution(12345));
+
+/* reverse 함수 사용 */
+function solution(n) {
+    let answer = [];
+    answer = n.toString().split('').reverse().map((data) => parseInt(data));
+    return answer;
+}
+console.log(solution(12345));
