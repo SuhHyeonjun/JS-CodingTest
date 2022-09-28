@@ -1,4 +1,5 @@
 /* 이대로 푸니 solution([1,1,3,3,0,1,1]) [1,3,0] 이렇게 나옴 */
+/* 중복을 완전히 제거 하는 방식 */
 // function solution(arr) {
 //     var answer = [];
 //     for (let i = 0; i < arr.length; i++) {
